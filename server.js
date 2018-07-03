@@ -48,6 +48,25 @@ function getRandomComplement() {
   return compliments[randomIndex];
 }
 
+
+const insult = [
+  "You like horrible today",
+  "That dress looks bad on you",
+  "Have you not been working out?",
+  "You can't do easy things",
+  "You've haven't gotten far in this course. You're really dumb",
+  "You're not programming! How come?",
+  "I'm not proud of you",
+  "You copied this",
+  "You haven't learned a lot of things, and that's pretty hard to do"
+];
+
+function getRandomInsult() {
+  const randomIndex = Math.floor(Math.random() * insult.length);
+  return insult[randomIndex];
+}
+
+
 const app = express();
 
 app.get("/", function(req, res) {
@@ -61,6 +80,18 @@ app.get("/compliment", function(req, res) {
     })
     .end();
 });
+
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "index.html"));
+});
+
+app.get("/insult", function(req, res) { 
+  res 
+    .json({ 
+      insult: getRandomInsult() 
+    })
+    .end(); 
+})
 
 app.use("/public", express.static("./public"));
 
