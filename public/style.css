@@ -1,1 +1,59 @@
 /* add css here */
+body{ 
+    background-color: lightgray;
+}
+
+h1 { 
+    text-decoration: underline; 
+    size: 30em; 
+    text-align: center; 
+    font-family: 'Bree Serif', serif;
+}
+
+h2 { 
+    size: 15em; 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+}
+
+
+.comps { 
+    border: 5px solid green;
+    padding: 10px; 
+    background-size: contain; 
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_aFuGu3Hv3eZIWNYJaRck0LVLH7fBGaqTDS8Hn214TerQ_Oio)
+
+}
+
+.comps-button { 
+    text-align: center; 
+}
+
+.ins{ 
+    border: 5px solid red;
+    padding: 10px; 
+    background-size: contain; 
+    background-image: url(https://t3.ftcdn.net/jpg/01/65/46/28/500_F_165462809_ffd4loHVXLeNxYlQJ36WrkG5aB9WXml3.jpg);
+    opacity: .85;   
+}
+
+.ins-button { 
+    text-align: center; 
+}
+
+.compliment{ 
+    
+    size: 15em; 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold; 
+}
+
+.insult{
+    size: 15em; 
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
